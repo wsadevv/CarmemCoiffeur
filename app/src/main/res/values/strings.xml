@@ -15,6 +15,17 @@
     <string name="entrar">Entrar</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="como_funciona">Como funciona?</string>
+    <string name="texto_criar_conta">Para nos conhecermos melhor e atendê-lo(a) da melhor forma, você necessita criar uma conta!</string>
+    <string name="logar_google">Você pode se cadastrar com a sua conta do Google aqui!</string>
+    <string name="logar_google_amend">É simples e fácil, só clicar no botão abaixo e escolher a conta</string>
+    <string name="nova_conta_email">Ou você pode criar uma nova conta com email e senha!</string>
+    <string name="facebook_app_id">205807869895942</string>
+    <string name="credenciais_facebook">Ou se preferir, use suas credenciais do Facebook!</string>
+    <string name="login_google">Logar-se com a sua conta Google</string>
+    <string name="email">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="cadastrar_email">Você pode se cadastrar com seu email</string>
+    <string name="ou">Ou</string>
 
 
 </resources>

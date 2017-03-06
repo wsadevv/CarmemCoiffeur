@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="wsadevv.com.carmemcoiffeur">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeWhite">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
             android:name=".core.activities.MainActivity"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".core.activities.SplashScreenActivity"
             android:label="@string/title_activity_splash_screen">
@@ -29,8 +28,18 @@
         <activity
             android:name=".admin.AdminControlsActivity"
             android:label="@string/title_activity_admin_controls" />
-        <activity android:name=".core.MainScreenActivity" />
-        <activity android:name=".auth.LoginProviderActivity"></activity>
+        <activity android:name=".core.activities.MainScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".auth.LoginProviderActivity" />
+        <activity android:name=".auth.CadastrarActivity" />
+        <activity android:name=".auth.LoginFacebook" />
+        <activity android:name=".auth.LoginGoogle" />
+        <activity android:name=".auth.LoginMail"></activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
+
 </manifest>

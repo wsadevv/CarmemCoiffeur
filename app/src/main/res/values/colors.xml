@@ -9,6 +9,9 @@
     <color name="raisedButtonText">#FFFFFF</color>
     <color name="entrar">#1E88E5</color>
 
+    <color name="darkGrey">#424242</color>
+    <color name="lightGrey">#9E9E9E</color>
+
 
 
 </resources>
