@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -63,6 +64,7 @@ public class LoginGoogle extends AppCompatActivity implements GoogleApiClient.On
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
+            Toast.makeText(this, "Account logged: "+acct.getDisplayName(), Toast.LENGTH_SHORT).show();
             //mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
             //updateUI(true);
         } else {
